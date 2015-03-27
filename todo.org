@@ -1,0 +1,13 @@
+* Ideas (I am not likely to spend too much time working on these)
+Anyone who feels like working on one of these items, go for it.  Also, please let me know if you do, so I can update this file to prevent duplication of effort.
+** URL naming scheme for sources
+replace the --profile flag with a URL-like scheme for specifying data sources, and have only --from and --to flags. For example:
+- file:///path/to/orgfile
+- gtasks://profile/listname
+Having a naming scheme like this removes the need to hard-code the type of the data-sources.  It will allow the future possibility of syncing two gtask lists, two local files, etc.
+** Add other tasklist (or other) backends / refactor the code to make it easier to add new backends.
+** Figure out how to identify whether a google-tasks list is currently being edited, and postpone syncing until it is no longer being edited and remains so for a certain period of time.  Might be able to use the "updated" timestamp provided from the GTasks API representation of a task.
+** More intelligent sync using task GUIDs provided by google, stored as properties of the org-mode headlines
+** only allow syncing when diff3.py is present and the diff3 program exists
+** Mode where multiple Gtasks-lists can be synced to a single org-mode file
+The idea is to have an org-mode file whose top-level headings corresponded to different google-tasks lists.  Each heading would have a properties drawer with some properties indicating which michel-profile and gtasks list-name the heading corresponds to.
