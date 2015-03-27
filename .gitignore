@@ -1,1 +1,4 @@
 *.pyc
+build/
+dist/
+michel_orgmode.egg-info/
