@@ -10,7 +10,7 @@ setup(
     license=open('LICENSE.txt').read(),
     description='push/pull an org-mode file to a google-tasks task-list',
     long_description=open('README.md').read(),
-    install_requires = ['google-api-python-client', 'pyxdg'],
+    install_requires = ['python-gflags', 'google-api-python-client', 'pyxdg'],
     entry_points=("""
     [console_scripts]
     michel-orgmode = michel.michel:main
